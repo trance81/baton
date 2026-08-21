@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "AfterAgent": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "name": "baton-breadcrumb",
+            "command": "node \"<PROJECT_ROOT>/scripts/baton-stop-hook.mjs\""
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "name": "baton-breadcrumb",
+            "command": "node \"<PROJECT_ROOT>/scripts/baton-stop-hook.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}
